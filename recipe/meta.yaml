@@ -36,6 +36,14 @@ requirements:
     - cairo       # [build_platform != target_platform]
     - gdk-pixbuf  # [build_platform != target_platform]
     - pango       # [build_platform != target_platform]
+    - {{ cdt('libxau-devel') }}  # [linux]
+    - {{ cdt('xorg-x11-util-macros') }}  # [linux]
+    - {{ cdt('xorg-x11-proto-devel') }}  # [linux]
+    - {{ cdt('libx11-devel') }}          # [linux]
+    - {{ cdt('libx11-common') }}         # [linux]
+    - {{ cdt('libx11') }}                # [linux]
+    - {{ cdt('libxext-devel') }}         # [linux]
+    - {{ cdt('libxext') }}               # [linux]
   host:
     - glib
     - gettext

@@ -1,2 +1,4 @@
 gdk_pixbuf:
   - 2
+cdt_name:
+  - amzn2   # [linux and aarch64]
